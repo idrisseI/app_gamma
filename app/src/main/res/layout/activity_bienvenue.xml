@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Bienvenue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/bienvenue"
+                android:textColor="#0099FF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:drawableRightCompat="@drawable/wifi2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/presentation"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onyva"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/plusvoir"
+                android:textColor="#FFFFFF"
+                android:textStyle="italic" />
+
+            <LinearLayout
+
+                android:id="@+id/boutons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+
+                    android:id="@+id/aller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/cestparti"
+                    android:layout_margin="3dp"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/red"/>
+
+                <Button
+                    android:id="@+id/p_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:text="@string/PC"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@android:color/darker_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

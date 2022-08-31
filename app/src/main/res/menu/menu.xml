@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/parametres"
+        android:title="@string/param_btn"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/infos"
+        android:title="@string/informations"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:visible="true"
+        android:visibility="gone"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/Aide"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/aide"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/version"
+        android:title="@string/vers_version"
+        android:visible="true" />
+    <item
+        android:id="@+id/contact"
+        android:icon="@android:drawable/sym_action_email"
+        android:title="@string/contact"
+        android:visible="true" />
+    <item
+        android:id="@+id/détruire"
+        android:icon="@drawable/ic_baseline_stop_circle_24"
+        android:title="@string/stop_app"
+        android:visible="true"/>
+    <item
+        android:id="@+id/nous_soutenir"
+        android:title="@string/nous_soutenir"
+        android:visible="true" />
+</menu>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.maps.android:maps-utils-ktx:3.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/transforms-3/29e70dddb40a565f6ffc2c9f10c72e66/transformed/jetified-maps-utils-ktx-3.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/transforms-3/29e70dddb40a565f6ffc2c9f10c72e66/transformed/jetified-maps-utils-ktx-3.2.1/res" />
+      <root url="file://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/transforms-3/29e70dddb40a565f6ffc2c9f10c72e66/transformed/jetified-maps-utils-ktx-3.2.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/modules-2/files-2.1/com.google.maps.android/maps-utils-ktx/3.2.1/33ee04fcfd96b5282ffdb1a6a5053ebbcc568044/maps-utils-ktx-3.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/modules-2/files-2.1/com.google.maps.android/maps-utils-ktx/3.2.1/9f06cbb164781c11a9adf4bff4a91337879b5190/maps-utils-ktx-3.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

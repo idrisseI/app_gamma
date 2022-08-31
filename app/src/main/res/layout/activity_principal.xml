@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    tools:context=".Principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+        android:id="@+id/Etat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etat_0"
+        android:textStyle="italic"
+        android:layout_weight="0"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/chargement"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Etat" />
+
+        <LinearLayout
+            android:id="@+id/autres_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chargement">
+
+            <Button
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/position"
+                android:textSize="12sp"
+                app:backgroundTint="@color/grey" />
+
+            <Button
+                android:id="@+id/trois_petits_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trois_p_p"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:backgroundTint="@color/grey" />
+
+            <Button
+                android:id="@+id/vers_test_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/test_wifi"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/itineraire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:clickable="true"
+                android:contentDescription="@string/btn_itineraire_dsc"
+                android:visibility="gone"
+                android:backgroundTint="@color/vert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_dialog_map"
+                tools:visibility="visible" />
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/map"
+                tilesource="Mapnik"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </org.osmdroid.views.MapView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+        android:id="@+id/actions_infos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/map">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/actions_principales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/chercher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="@string/rechercher"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/grey"
+                    tools:ignore="TextContrastCheck"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/centrer_sur_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/ma_position"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/red" />
+
+                <Button
+                    android:id="@+id/centrer_sur_antenne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/centrer_sur_antenne"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/bleu_clair"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/liste_antennes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/antennes_proximit"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/bleu_marine"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/infos_trajet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/texte_cache"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:drawableLeftCompat="@android:drawable/ic_dialog_map"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actions_infos" />
+
+        <LinearLayout
+            android:id="@+id/infos_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/infos_trajet">
+
+            <TextView
+                android:id="@+id/infos_loc_moi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Latitude \nLongitude \nAdresse (facultatif)"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/infos_loc_antenne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Latitude antenne \nLongitude antenne \nPanneaux disponibles \ndistance"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-9220805797747004/7615406530">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

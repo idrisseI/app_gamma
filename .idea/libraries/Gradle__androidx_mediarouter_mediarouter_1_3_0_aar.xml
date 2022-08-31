@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.mediarouter:mediarouter:1.3.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/transforms-3/a9f8c77e1ff65b3ca10c88c1c3e74596/transformed/mediarouter-1.3.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/transforms-3/a9f8c77e1ff65b3ca10c88c1c3e74596/transformed/mediarouter-1.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/transforms-3/a9f8c77e1ff65b3ca10c88c1c3e74596/transformed/mediarouter-1.3.0/res" />
+      <root url="file://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/transforms-3/a9f8c77e1ff65b3ca10c88c1c3e74596/transformed/mediarouter-1.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/JoystickView-master/JoystickView-master/gradle/caches/modules-2/files-2.1/androidx.mediarouter/mediarouter/1.3.0/c9ad9fc5a4debc3a97de865378541641d53a577c/mediarouter-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
